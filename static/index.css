@@ -1,0 +1,45 @@
+@import url("./main.css");
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.mainicon{
+  width: 200px;
+}
+
+.subtext{
+  width: 360px;
+  height: 100px;
+  background-image: url("./image/cloud.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 100px;
+
+  
+}
+
+.subtext p{
+  font-size: 12px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.subtitle{
+  font-family: 'Galmuri9';
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.maintitle{
+  font-size: 50px;
+  font-family: 'Galmuri9';
+  font-weight: 500;
+  text-shadow: -5px 0 #d9d9d9, 0 5px #d9d9d9, 5px 0 #d9d9d9, 0 -5px #d9d9d9;
+}
