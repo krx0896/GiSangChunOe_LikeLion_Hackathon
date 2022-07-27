@@ -73,7 +73,7 @@ a{
     height: 120px;
     position: absolute;
     top: 80px;
-    left: 370px;
+    left: 140px;
 }
 
 .bronzemedal {
@@ -81,7 +81,8 @@ a{
     height: 120px;
     position: absolute;
     top: 120px;
-    left: 140px;
+    left: 370px;
+    
 }
 
 .gold_tooltip{
@@ -90,8 +91,8 @@ a{
     background-color: #d9d9d9;
     color: #222222;
     text-align: center;
-    top: 80px;
-    left: 290px;
+    top: 90px;
+    left: 310px;
 }
 
 .silver_tooltip{
@@ -100,8 +101,8 @@ a{
     background-color: #d9d9d9;
     color: #222222;
     text-align: center;
-    top: 170px;
-    left: 850px;
+    top: 190px;
+    left: 60px;
 }
 
 .bronze_tooltip{
@@ -110,8 +111,8 @@ a{
     background-color: #d9d9d9;
     color: #222222;
     text-align: center;
-    top: 250px;
-    left: 60px;
+    top: 260px;
+    left: 860px;
 }
 
 .ranking_board{
@@ -127,4 +128,5 @@ a{
 .rank{
     padding: 10px;
     font-weight: bold;
+    font-size: large;
 }
