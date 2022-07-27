@@ -21,11 +21,21 @@ nav{
 nav div a{
   margin-right: 30px;
 }
+.menu{
+  display: flex;
+}
 a{
   text-decoration: none;
   color: #222222;
   font-size: 15px;
+  display: flex;
+  align-items: center;
 }
+.nav_icon{
+  width: 22px;
+  margin-right: 2px;
+}
+
 .maintitle a{
   font-weight: 500;
   text-shadow: -2px 0 #d9d9d9, 0 2px #d9d9d9, 2px 0 #d9d9d9, 0 -2px #d9d9d9;
@@ -46,6 +56,8 @@ a{
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  margin-bottom: 10px;
 }
 
 .bar{
@@ -71,8 +83,9 @@ a{
 .date{
   font-family: 'Galmuri9';
   font-weight: 700;
-  font-size: 20px;
-  text-shadow: -2px 0 #2222, 0 2px #2222, 2px 0 #2222, 0 -2px #2222;
+  font-size: 32px;
+  -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #222222;
 }
 
 .dateminus, .dateplus{
@@ -81,46 +94,100 @@ a{
   font-size: 15px;
 }
 
-.sec2{
+.sec1-2{
+  margin-top: 10px;
   display: flex;
-  padding: 10px;
-  padding-top: 20px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.server{
-  width: 480px;
-  height: 550px;
-  box-sizing: border-box;
-  background-image: url("./image/rainy.gif");
-  background-size: contain;
-  background-repeat: no-repeat;
+
+select{
+  display: block;
+  padding: 10px;
+  font-family: 'Galmuri11';
+  color: #222222;
+  margin-right: 10px;
 }
 
+.subtext{
+}
+
+.sec2{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.server,
 .user{
   width: 480px;
-  height: 550px;
+  height: 520px;
   box-sizing: border-box;
-  background-image: url("./image/snow.gif");
   background-size: contain;
   background-repeat: no-repeat;
+
+  position: relative;
+}
+.server{
+  background-image: url("./image/rainy.gif");
+}
+.user{
+  background-image: url("./image/sunny.gif");
 }
 
 .vs{
   font-family: 'Galmuri11';
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
   font-size: 100px;
-  width: max-content;
-  height: max-content;
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 0;
+  top: 350px;
   margin: auto;
-  
+  width: max-content;
+  height: max-content;
   -webkit-text-stroke-width: 3px;
 	-webkit-text-stroke-color: #d9d9d9;
+
+  z-index: 100;
+}
+
+.server .home_icon{
+  width: 200px;
+  bottom: 140px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.user .home_icon{
+  width: 300px;
+  bottom: 110px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.home_icon{
+  position: absolute;
+}
+
+.result{
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  font-weight: 700
+}
+
+.result.win{
+  color: #557bff;
+  -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #ffffff;
+}
+.result.lose{
+  color: #ff5555;
+  -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #ffffff;
 }
