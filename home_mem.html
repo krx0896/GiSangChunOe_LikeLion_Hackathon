@@ -12,7 +12,7 @@
     <nav>
       <div class="maintitle"><a href="./home.html">기상천외</a></div>
       <div class="menu">
-        <a href="#"><img class="nav_icon" src="./static/image/mypage.png" alt="">마이페이지</a>
+        <a href="./mypage.html"><img class="nav_icon" src="./static/image/mypage.png" alt="">마이페이지</a>
         <a href="#"><img class="nav_icon" src="./static/image/rank.png" alt="">랭킹보기</a>
       </div>
     </nav>
@@ -37,18 +37,24 @@
           <option value="dinner">퇴근길</option>
           <option value="night">야식땡길때</option>
         </select>
-        <div class="subtext">에는 비가 왔습니다.</div>
+        <div class="subtext">날씨는?</div>
+        <form class="weather_form" method="get" action="">
+          <label><input type="radio" name="weather" value="sunny">맑은</label>
+          <label><input type="radio" name="weather" value="rainny">비오는</label>
+          <label><input type="radio" name="weather" value="snow">눈오는</label>
+          <input class="weather_btn" type="submit" value="날씨일 거에요!">
+        </form>
       </section>
 
       <section class="sec2">
-        <div class="server">
+        <div class="server" style="background-image:url('./static/image/rainy.gif');">
           <img class="home_icon" src="./static/image/server_icon.gif" alt="">
-          <div class="result win">WIN</div>
+          <!-- <div class="result win">WIN</div> -->
         </div>
         <div class="vs">VS</div>
-        <div class="user">
+        <div class="user" style='background-image: url("./static/image/sunny.gif");'>
           <img class="home_icon" src="./static/image/sunny_icon.gif" alt="">
-          <div class="result lose">LOSE</div>
+          <!-- <div class="result lose">LOSE</div> -->
         </div>
       </section>
     </div>

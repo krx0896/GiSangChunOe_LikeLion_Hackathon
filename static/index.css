@@ -16,7 +16,7 @@
 .subtext{
   width: 360px;
   height: 100px;
-  background-image: url("./image/cloud.png");
+  
   background-size: contain;
   background-repeat: no-repeat;
   margin-left: 100px;
