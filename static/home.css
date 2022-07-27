@@ -63,7 +63,7 @@ a{
 .bar{
   width: 400px;
   height: 30px;
-  background-color: #d9d9d9;
+  background-color: #8b8b8b;
   padding: 5px;
   box-sizing: border-box;
 }
@@ -71,13 +71,13 @@ a{
 .bar:nth-child(1) .blood{
   width: 80%;
   height: 100%;
-  background-color: #ff5555;
+  background-color: yellow;
 }
 
 .bar:last-child .blood{
   width: 50%;
   height: 100%;
-  background-color: #557bff;
+  background-color: yellow;
 }
 
 .date{
@@ -203,4 +203,15 @@ select{
   color: #ff5555;
   -webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #ffffff;
+}
+
+.charname{
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #222222;
+  text-shadow: 3px 3px 0px #222222;
 }
